@@ -1,0 +1,146 @@
+
+body{
+  font-family: 'Barlow', sans-serif;
+  background: url("images/illustration.svg");
+  max-height: 100%;
+  max-width: 1440px;
+  overflow-x: hidden;
+}
+h1,a{
+  font-family: 'Barlow Condensed', sans-serif;
+}
+.container-fluid{
+  padding: 7%;
+}
+
+/* Navigation section */
+.logo-img{
+  display: inline-block;
+}
+.navbar-nav{
+  margin-left: 60%;
+}
+.nav-link{
+  color: hsl(230, 29%, 20%);
+  font-weight: 700;
+}
+.login{
+  color: hsl(231, 7%, 65%);
+}
+.nav-link:hover{
+  text-decoration: underline;
+  color: inherit;
+}
+.login:hover{
+  text-decoration: underline;
+  color: hsl(231, 7%, 65%);
+}
+.li-hr{
+  margin: 0 30px;
+  width: 10px;
+  border-top: 7px dotted;
+  border-color:hsl(231, 7%, 65%);
+  border-bottom: 0;
+  border-left: 0;
+  border-right: 0;
+}
+.login-list{
+  margin-bottom: 0;
+  padding: 0;
+  list-style: none;
+}
+/*
+left part or heading part */
+
+.heading{
+  font-size: 3.5rem;
+  font-weight: 700;
+}
+.blue-span{
+  background-color: hsl(230, 29%, 20%);
+  color: #fff;
+  padding: 1%;
+  border-radius: 20px;
+  display: inline-block;
+}
+.space-paragraph{
+  display: inline-block;
+  letter-spacing: 5px;
+  font-size: 1rem;
+  padding-left: 1rem;
+  color: hsl(231, 7%, 65%);
+}
+.standard-paragraph{
+  color: hsl(230, 11%, 40%);
+  padding: 2rem  0;
+  font-size: 1.2rem;
+  width:20rem;
+}
+.btn{
+  background-color: hsl(0, 100%, 68%);
+  color: #fff;
+  font-weight: 700;
+}
+.btn:hover{
+  background-color: hsl(0, 100%, 75%);
+  color: #fff;
+}
+ /* rigth part or image part */
+
+.devices{
+
+position: relative;
+left:100px;
+}
+.grey-corner{
+  width:50%;
+  height: 50%;
+  background-color: hsl(207, 33%, 95%);
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-bottom-left-radius: 25px;
+}
+
+/* footer part  */
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+#menu.container-fluid{
+  padding: 3% 7%;
+}
+/* jquery classes */
+.burger{
+  display: none;
+  margin-left: 80%;
+}
+.white-list{
+  text-align: center;
+  background-color: #fff;
+  width:90%;
+  padding: 5% 10%;
+  z-index: 1;
+  display: none;
+}
+.close{
+  position: relative;
+  left: 10%;
+}
+
+/* media query */
+@media(max-width: 995px) {
+  body{
+    text-align: center;
+  }
+  .standard-paragraph{
+    padding: 1rem;
+    width: auto;
+  }
+  #part1{
+    padding: 7%;
+  }
+  .devices{
+    left:50px;
+  }
+}
